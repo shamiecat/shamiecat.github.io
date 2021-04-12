@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+  <script  src="./script.js"></script>
+  <link rel="shortcut icon" type="image" href="images/favicon3.ico" sizes="16x16">
+  <link rel="stylesheet" href="css/style.css" >
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+  <link rel="stylesheet" href="https://use.typekit.net/hmp7ewf.css" >
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,700,800,600' >
+
+  <button class="sidebar-toggle">
+    <i class="fas fa-bars"></i>
+  </button>
+
+  <!-- sidebar -->
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <img src="images//biglogo1.png" class="logo" alt="" />
+      <button class="close-btn"><i class="fas fa-times"></i></button>
+    </div>
+    <!-- links -->
+    <ul class="links">
+      <li>
+        <a href="index.html">Home</a>
+      </li>
+      <li>
+        <a href="art.html">Projects</a>
+      </li>
+      <li>
+        <a href="apps.html">Skills</a>
+      </li>
+      <li>
+        <a href="about.html">Me</a>
+      </li>
+    </ul>
+  </aside>
+  <meta charset="utf-8">
+
+  <title>Portfolio</title>
+  <script>
+  const toggleBtn = document.querySelector(".sidebar-toggle");
+
+  const sidebar = document.querySelector(".sidebar ");
+
+  const closeBtn = document.querySelector(".close-btn");
+
+  toggleBtn.addEventListener("click", function () {
+    sidebar.classList.toggle("show-sidebar");
+  });
+
+  closeBtn.addEventListener("click", function () {
+    sidebar.classList.remove("show-sidebar");
+  });
+  </script>
+
+</head>
+
+<body class="portfolio-background2">
+
+  <header>
+    <h1 class="artheading">Portfolio</h1>
+
+  </header>
+  <!-- Navigation section -->
+  <nav>
+    <a href="#">Welcome to my art page. </a>
+  </nav>
+  <body>
+    <div class="container">
+
+  <section class="main">
+    <h1> Logo Process </h1>
+  </section>
+
+  <section class="gallery">
+    <ul>
+      <li class="item">
+        <div class="info">
+          <a href="#" title="Project Title">
+            <img src="images//logosketch.png">
+          </a>
+          <h3> Sketch </h3>
+          <p>  </p>
+        </div>
+      </li>
+      <li class="item">
+        <div class="info">
+          <a href="#" title="Project Title">
+            <img src="images//shamikalogo.jpg">
+          </a>
+          <h3>Logo experiment</h3>
+          <p> Playing around with logo concepts on Adobe Illustrator. I really liked the heart desgin so i played with different roations and colour themes. </p>
+        </div>
+      </li>
+      <li class="item">
+        <div class="info">
+          <a href="#" title="Project Title">
+            <img src="images//logoswatch.jpg">
+          </a>
+          <h3>Logo Colours </h3>
+          <p> Here I was trying out different colours for the logo that could work for the final product. </p>
+        </div>
+      </li>
+      <li class="item">
+        <div class="info">
+          <a href="#" title="Project Title">
+            <img src="images/biglogo.png">
+          </a>
+          <h3>Final Design</h3>
+          <p> A collage about Eurocentrism and it's affects on black women. Made this piece with Clip Studio Paint. </p>
+        </div>
+      </li>
+      <li class="item">
+        <div class="info">
+          <a href="#" title="Project Title">
+            <img src="images/logomockup1.png">
+          </a>
+          <h3>Logo Mockup</h3>
+          <p> Personal logo on a business card. </p>
+        </div>
+      </li>
+      <li class="item">
+        <div class="info">
+          <a href="#" title="Project Title">
+            <img src="images/logomockup2.png">
+          </a>
+          <h3> Logo Mockup II </h3>
+          <p> Alternative logo on business card.  </p>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+</div>
+    <footer class="copyright"> Copright &copy 2021 Shamika Pierre. All Rights Reserved.</footer>
+  </body>
+  </html>

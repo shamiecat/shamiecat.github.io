@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <link rel="shortcut icon" type="image" href="images/favicon3.ico" sizes="16x16">
+  <link rel="stylesheet" href="https://use.typekit.net/hmp7ewf.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+
+  <button class="sidebar-toggle">
+    <i class="fas fa-bars"></i>
+  </button>
+
+  <!-- sidebar -->
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <img src="images//biglogo1.png" class="logo" alt="" />
+      <button class="close-btn"><i class="fas fa-times"></i></button>
+    </div>
+    <!-- links -->
+    <ul class="links">
+      <li>
+        <a href="index.html">Home</a>
+      </li>
+      <li>
+        <a href="art.html">Projects</a>
+      </li>
+      <li>
+        <a href="apps.html">Skills</a>
+      </li>
+      <li>
+        <a href="about.html">Me</a>
+      </li>
+    </ul>
+  </aside>
+
+
+
+  <meta charset="utf-8">
+
+  <title>Shamika Pierre</title>
+
+
+  <script>
+  const toggleBtn = document.querySelector(".sidebar-toggle");
+
+  const sidebar = document.querySelector(".sidebar ");
+
+  const closeBtn = document.querySelector(".close-btn");
+
+  toggleBtn.addEventListener("click", function () {
+    sidebar.classList.toggle("show-sidebar");
+  });
+
+  closeBtn.addEventListener("click", function () {
+    sidebar.classList.remove("show-sidebar");
+  });
+</script>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://use.typekit.net/hmp7ewf.css">
+<link rel="stylesheet" href="https://use.typekit.net/hmp7ewf.css">
+
+
+</head>
+
+<body>
+
+  <div class="page-wrap">
+
+    <header>
+      <img class="icon" src="images//biglogo.png" alt="">
+      <h1 class="shamika">Shamika Pierre</h1>
+    </header>
+  </div>
+  <!-- partial:index.partial.html -->
+<style>
+    .icon:hover{
+      -webkit-animation: spin 5s infinite;
+       animation: spin 5s infinite;
+    }
+
+    @-webkit-keyframes spin{
+      from {
+        -webkit-transform: rotateY(0deg);
+      }
+      to {
+        -webkit-transform: rotateY(-360deg);
+      }
+    }
+
+    @keyframes spin{
+      from {
+        -moz-transform: rotateY(0deg);
+        -ms-transform: rotateY(0deg);
+        transform: rotateY(0deg);
+      }
+
+      to {
+        -moz-transform: rotateY(-360deg);
+        -ms-transform: rotateY(-360deg);
+        transform: rotateY(-360deg);
+      }
+    }
+</style>
+</head>
+<body class="home">
+   <div class="logo">
+    <span class="logoText">
+
+    </span>
+  </div>
+
+  <footer class="copyright"> Copright &copy 2021 Shamika Pierre. All Rights Reserved.</footer>
+
+</body>
+
+</html>

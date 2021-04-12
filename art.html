@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- partial -->
+  <script  src="./script.js"></script>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://use.typekit.net/hmp7ewf.css">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,700,800,600'>
+
+  <button class="sidebar-toggle">
+    <i class="fas fa-bars"></i>
+  </button>
+
+  <!-- sidebar -->
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <img src="images//biglogo1.png" class="logo" alt="" />
+      <button class="close-btn"><i class="fas fa-times"></i></button>
+    </div>
+    <!-- links -->
+    <ul class="links">
+      <li>
+        <a href="index.html">Home</a>
+      </li>
+      <li>
+        <a href="art.html">Projects</a>
+      </li>
+      <li>
+        <a href="apps.html">Skills</a>
+      </li>
+      <li>
+        <a href="about.html">Me</a>
+      </li>
+    </ul>
+  </aside>
+  <meta charset="utf-8">
+
+  <title>Portfolio</title>
+  <script>
+  const toggleBtn = document.querySelector(".sidebar-toggle");
+
+  const sidebar = document.querySelector(".sidebar ");
+
+  const closeBtn = document.querySelector(".close-btn");
+
+  toggleBtn.addEventListener("click", function () {
+    sidebar.classList.toggle("show-sidebar");
+  });
+
+  closeBtn.addEventListener("click", function () {
+    sidebar.classList.remove("show-sidebar");
+  });
+  </script>
+
+</head>
+
+<body class="portfolio-background">
+
+  <header>
+    <h1 class="artheading">Portfolio</h1>
+
+  </header>
+  <!-- Navigation section -->
+  <nav>
+    <a href="#">Welcome to my art page. </a>
+  </nav>
+  <body>
+    <div class="container">
+
+  <section class="main">
+    <h1> Here are all of my recent artworks! </h1>
+  </section>
+
+  <section class="gallery">
+    <ul>
+      <li class="item">
+        <div class="info">
+          <a href="#" title="Project Title">
+            <img src="images//shamport.png">
+          </a>
+          <h3> High Fidelity Wireframe </h3>
+          <p> This a high fidelity wireframe I created with Adobe XD during my time with the UforChange Design and Web development program for my website! </p>
+        </div>
+      </li>
+      <li class="item">
+        <div class="info">
+          <a href="logo.html" title="Logo">
+            <img src="images//logoswatch.jpg">
+          </a>
+          <h3>Personal Logo</h3>
+          <p>Process for my personal logo for this website! </p>
+        </div>
+      </li>
+      <li class="item">
+        <div class="info">
+          <a href="#" title="Project Title">
+            <img src="images//Moodboard.jpg">
+          </a>
+          <h3>Moodboard</h3>
+          <p>This moodboard is were this all began! I collected images from unpslash and pinterest to create a moodboard/concept for this website. I really wanted to go with a fun, bright colours and cartoony feel so I gathered images with that tone. </p>
+        </div>
+      </li>
+      <li class="item">
+        <div class="info">
+          <a href="#" title="Project Title">
+            <img src="images/collageart.jpg">
+          </a>
+          <h3>Collage</h3>
+          <p> A collage about Eurocentrism and it's affects on black women. Made this piece with Clip Studio Paint. </p>
+        </div>
+      </li>
+      <li class="item">
+        <div class="info">
+          <a href="#" title="Project Title">
+            <img src="images/logomockup1.png">
+          </a>
+          <h3>Logo Mockup</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </li>
+      <li class="item">
+        <div class="info">
+          <a href="#" title="Project Title">
+            <img src="images/caution.png">
+          </a>
+          <h3>caution.</h3>
+          <p> This is a acrylic painting. This is a piece about being trapped in your own mind and insecurity and not knowing how to get out. </p>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+</div>
+    <footer class="copyright"> Copright &copy 2021 Shamika Pierre. All Rights Reserved.</footer>
+  </body>
+  </html>

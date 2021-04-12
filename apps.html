@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="shortcut icon" type="image" href="images/favicon3.ico" sizes="16x16">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://use.typekit.net/hmp7ewf.css">
+  <button class="sidebar-toggle">
+    <i class="fas fa-bars"></i>
+  </button>
+
+  <!-- sidebar -->
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <img src="images//biglogo1.png" class="logo" alt="" />
+      <button class="close-btn"><i class="fas fa-times"></i></button>
+    </div>
+    <!-- links -->
+    <ul class="links">
+      <li>
+        <a href="index.html">Home</a>
+      </li>
+      <li>
+        <a href="art.html">Projects</a>
+      </li>
+      <li>
+        <a href="apps.html">Skills</a>
+      </li>
+      <li>
+        <a href="about.html">Me</a>
+      </li>
+    </ul>
+  </aside>
+  <meta charset="utf-8">
+  <title>Skills</title>
+  <script>
+  const toggleBtn = document.querySelector(".sidebar-toggle");
+
+  const sidebar = document.querySelector(".sidebar ");
+
+  const closeBtn = document.querySelector(".close-btn");
+
+  toggleBtn.addEventListener("click", function () {
+    sidebar.classList.toggle("show-sidebar");
+  });
+
+  closeBtn.addEventListener("click", function () {
+    sidebar.classList.remove("show-sidebar");
+  });
+  </script>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://use.typekit.net/hmp7ewf.css">
+  <link rel="stylesheet" href="https://use.typekit.net/hmp7ewf.css">
+
+</head>
+
+
+<title>CodePen - Vertical Auto Carousel : Vue.js + Bulma</title>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.2/css/bulma.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css'><link rel="stylesheet" href="./style.css">
+<div id="app">
+  <div class="main-container">
+    <div class="container logosCarousel">
+      <div class="columns titleBlock is-marginless">
+        <h1 class="title-has-text-weight-bold">Skills and Programs</h1>
+      </div>
+      <div class="columns logoBlock is-marginless is-mobile">
+        <!-- Iterate column -->
+        <template v-for="(logoList, colId) in logoLists">
+          <div :key="colId" class="column">
+            <!-- Iterate row -->
+            <div v-for="(logo, rowId) in logoList[`column${colId + 1}`]" :key="rowId" :class="['carousel', `carousel${colId + 1}`, setActiveClass(colId, rowId)]">
+              <i :class="logo.src"></i>
+            </div>
+          </div>
+        </template>
+      </div>
+    </div>
+    </div
+  </div>
+  <!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.min.js'></script><script  src="./script.js"></script>
+</head>
+<!-- partial:index.partial.html -->
+<body class="app-background">
+
+</body>
+  <footer class="copyright"> Copright &copy 2021 Shamika Pierre. All Rights Reserved.</footer>
+</html>
